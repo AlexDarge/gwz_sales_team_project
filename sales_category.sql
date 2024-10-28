@@ -1,5 +1,4 @@
 SELECT
-FROM ('data-analytics-bootcamp-363212.course14.gwz_sales')
 *, # Colonne model_type
   CASE
     WHEN REGEXP_CONTAINS(LOWER(model_name),"tour de cou|neckband|tapis|mat|flask|gourde") THEN "Accessories"
@@ -10,4 +9,4 @@ FROM ('data-analytics-bootcamp-363212.course14.gwz_sales')
     WHEN REGEXP_CONTAINS(LOWER(model_name),"débardeur|haut") THEN "Top"
     ELSE NULL
   END AS model_type,
-FROM `dataanalyticsalexdarge.course15.circle_stock_kpi`
+FROM ('data-analytics-bootcamp-363212.course14.gwz_sales')
